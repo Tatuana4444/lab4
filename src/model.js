@@ -11,7 +11,8 @@ let model = {
                 return response.json();
             }).then(function(data){
                 if (data.status == 'ok'){
-                    
+                    console.log(url);
+                    console.log(data);
                     if (str =='List')
                         view.displaySourcesList(data, countNews);
                     else
